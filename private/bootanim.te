@@ -7,3 +7,5 @@ dontaudit bootanim unlabeled:dir search;
 
 # Bootanim should not be reading default vendor-defined properties.
 dontaudit bootanim vendor_default_prop:file read;
+
+get_prop(bootanim, themed_bootanimation_prop)

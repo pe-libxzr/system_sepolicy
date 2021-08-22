@@ -568,6 +568,7 @@ compatible_property_only(`
     coredomain
     -init
     -system_writes_vendor_properties_violators
+    -themed_bootanimation
   } {
     property_type
     -system_property_type

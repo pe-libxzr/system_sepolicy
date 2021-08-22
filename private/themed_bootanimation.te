@@ -1,0 +1,9 @@
+type themed_bootanimation_exec, system_file_type, exec_type, file_type;
+type themed_bootanimation_prop, property_type;
+
+init_daemon_domain(themed_bootanimation)
+
+allow themed_bootanimation block_device:dir search;
+allow themed_bootanimation misc_block_device:blk_file r_file_perms;
+
+set_prop(themed_bootanimation, themed_bootanimation_prop)
